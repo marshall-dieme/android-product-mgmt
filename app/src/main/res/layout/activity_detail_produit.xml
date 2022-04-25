@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailProduit"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom du Produit"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txt_nom"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_nom"
+        android:textSize="18dp"
+        android:id="@+id/edit_nom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Famille du Produit"
+        android:textSize="18dp"
+        android:id="@+id/txt_famille"
+        android:layout_below="@+id/edit_nom"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_famille"
+        android:textSize="18dp"
+        android:id="@+id/edit_famille"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prix"
+        android:textSize="18dp"
+        android:id="@+id/txt_prix"
+        android:layout_below="@id/edit_famille"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_prix"
+        android:textSize="18dp"
+        android:id="@+id/edit_prix"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantité stock"
+        android:textSize="18dp"
+        android:id="@+id/txt_quantite"
+        android:layout_below="@+id/edit_prix"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_quantite"
+        android:textSize="18dp"
+        android:id="@+id/edit_quantite"
+        android:inputType="number"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:id="@+id/btn_edit"
+            android:layout_below="@+id/edit_quantite"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:id="@+id/btn_delete"
+            android:layout_below="@+id/btn_edit"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/red"/>
+
+
+</RelativeLayout>
